@@ -46,9 +46,6 @@ db.create_all()
 def index():
     person = Person.query.all()
     return render_template('index.html',data=person)
-    #  return jsonify({
-    #     'name': person.name
-    #   })
 
 
 
